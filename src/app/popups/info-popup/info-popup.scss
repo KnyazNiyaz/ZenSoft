@@ -1,0 +1,118 @@
+.message-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.message-popup-box {
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  top: 200px;
+  background-color: #FAFAFA;
+}
+
+.message-popup-heading {
+  position: relative;
+  height: 60px;
+  min-height: 60px;
+  color: #333;
+  background-color: green;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: table;
+  width: 100%;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.message-popup-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.message-popup-body {
+  padding: 20px 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.message-popup-item {
+  span {
+    font-weight: 700;
+  }
+}
+
+.message-popup-text {
+  margin-top: 15px;
+}
+
+.message-popup-footer {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.message-popup-button {
+  display: inline-block;
+  cursor: pointer;
+  color: #86817a;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 4px 9px;
+  vertical-align: middle;
+  border: 1px solid #c7c6c4;
+  border-radius: 4px;
+  height: 30px;
+  background-color: #f7f6f5;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  min-width: 78px;
+  &:active,
+  &:focus,
+  &:hover {
+    color: #86817a;
+    background-color: #e5e2de;
+    border-color: #a9a8a5;
+  }
+}
+
+.message-action-btn {
+  line-height: 60px;
+  color: #fff;
+  min-width: 30px;
+  text-align: center;
+  & > span {
+    padding: 3px;
+    cursor: pointer;
+  }
+  &:last-child {
+    padding: 0 15px;
+  }
+  >span:hover {
+    color: #eee;
+  }
+}
+
+.message-help {
+  color: whitesmoke;
+}

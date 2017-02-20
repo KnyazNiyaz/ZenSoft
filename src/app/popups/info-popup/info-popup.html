@@ -1,0 +1,25 @@
+<div class="message-popup">
+  <div class="message-popup-box">
+    <div class="message-popup-heading">
+      <div class="message-popup-title">Инфо</div>
+      <div class="message-action-btn">
+        <span class="font-icon-help message-help" ></span>
+      </div>
+      <div class="message-action-btn">
+        <span class="font-icon-cross" style="font-size: 10px;" (click)="close()">
+          <img src="../../../assets/delete-icon.png" style="width: 20px">
+        </span>
+      </div>
+    </div>
+    <div class="message-popup-body">
+      <div class="message-popup-item">
+        <span>Заголовок: </span>{{test.title}}
+      </div>
+      <input class="title" placeholder="Введите заголовок" autofocus="" [(ngModel)]="test.title"><br>
+      <div class="message-popup-item">
+        <span>Описание: </span>{{test.description}}
+      </div>
+      <div class="message-popup-text"> </div>
+    </div>
+  </div>
+</div>

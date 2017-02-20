@@ -1,0 +1,25 @@
+.header{
+  text-align: center;
+}
+
+.desc{
+  width: 167px;
+  margin-bottom: 10px;
+}
+
+.title{
+  margin-bottom: 10px;
+}
+
+.cont{
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 4px solid green;
+  padding: 25px;
+
+}
+
+.edit_box{
+  padding-top: 7px ;
+}
