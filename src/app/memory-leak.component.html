@@ -1,4 +1,4 @@
-<section class="todoapp">
+<section>
   <header class="header">
     <h1>Создание нового блога</h1>
     <input class="title" placeholder="Введите заголовок" autofocus="" [(ngModel)]="blog.title"><br>
@@ -9,20 +9,10 @@
     <input type="text" *ngIf="blog.isEdit" [(ngModel)]="blog.title">
   </header>
   <section class="main" *ngIf="blogs.length > 0">
-    <!--<ul>-->
-    <!--<li *ngFor="let blog of blogs">-->
-    <!--<div>-->
-    <!--{{blog.title}}<img src="../assets/eye-icon.png" style="width: 20px" (click)="openWarningPopup(blog)" >-->
-    <!--<img src="../assets/edit-icon.png" (click)="editBlog(blog)" style="width: 20px">-->
-    <!--<img src="../assets/delete-icon.png" (click)="removeTodo(blog)" style="width: 20px">-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--</ul>-->
-
-    <div class="cont" *ngFor="let blog of blogs">
+    <div class="content" *ngFor="let blog of blogs">
       <div>
         <span style="font-size: 20px">{{blog.title}}</span>
-        <span style="margin-left: 80%;">
+        <span style="margin-left: 5%;">
           <img src="../assets/eye-icon.png" style="width: 20px" (click)="openWarningPopup(blog)">
           <img src="../assets/edit-icon.png" (click)="editBlog(blog)" style="width: 20px">
           <img src="../assets/delete-icon.png" (click)="removeTodo(blog)" style="width: 20px">
@@ -30,27 +20,11 @@
       </div>
 
 
-
-      <div  class="edit_box" *ngIf="blog.isEdit">
-        <td ><input type="text" [(ngModel)]="blog.title"> </td>
+      <div class="edit_box" *ngIf="blog.isEdit">
+        <td><input type="text" [(ngModel)]="blog.title"></td>
         <span>Описание:</span>
-        <td ><input type="text" [(ngModel)]="blog.description"> </td>
+        <td><input type="text" [(ngModel)]="blog.description"></td>
       </div>
     </div>
-    <!--<table>-->
-    <!--<tr>-->
-    <!--<th>Заголовок</th>-->
-    <!--<th>Действия</th>-->
-    <!--</tr>-->
-    <!--<tr >-->
-    <!--<td ></td>-->
-    <!--<td>-->
-    <!---->
-
-    <!--</td>-->
-    <!--<td *ngIf="blog.isEdit"><input type="text" [(ngModel)]="blog.title"> </td>-->
-    <!--<td *ngIf="blog.isEdit"><input type="text" [(ngModel)]="blog.description"> </td>-->
-    <!--</tr>-->
-    <!--</table>-->
-    <!--</section>-->
   </section>
+</section>
