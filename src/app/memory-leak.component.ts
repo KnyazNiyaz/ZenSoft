@@ -28,11 +28,6 @@ export class MemoryLeakComponent {
   }
 
   openWarningPopup(blog): void {
-    let params = {
-      name: 'amirkhan',
-      age: 23,
-      a: blog
-    };
     this.router.navigate(['info'], {queryParams: blog});
   }
 
@@ -45,7 +40,4 @@ export class MemoryLeakComponent {
     this.service.refactorBlogById(blog.id);
   }
 
-  showBlog(blog){
-    this.service.presentBlog(blog.id);
-  }
 }

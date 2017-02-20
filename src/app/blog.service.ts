@@ -25,14 +25,6 @@ export class BlogService {
     return this;
   }
 
-  updateBlogById(id: number, values: Object = {}): Blog {
-    let blog = this.getBlogById(id);
-    if (!blog) {
-      return null;
-    }
-    Object.assign(blog, values);
-    return blog;
-  }
 
 
   getAllBlogs(): Blog[] {
@@ -51,12 +43,4 @@ export class BlogService {
       .pop();
   }
 
-
-  presentBlog(id: number){
-    let blog = this.getBlogById(id);
-    if (!blog) {
-      return null;
-    }
-    blog.isShown = !blog.isShown;
-  }
 }

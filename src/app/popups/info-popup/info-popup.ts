@@ -9,13 +9,13 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class InfoPopupComponent {
 
-  test;
+  blog;
 
-  constructor(public location: Location, private router: Router, private route: ActivatedRoute) {}
+  constructor(public location: Location,
+              private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.test = this.route.snapshot.queryParams;
-    console.log('test', this.test);
+    this.blog = this.route.snapshot.queryParams;
   }
 
   close(){
